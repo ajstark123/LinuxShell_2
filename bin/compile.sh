@@ -1,4 +1,7 @@
 
+#
+#  used to build the Linux Shell out side of the intellij
+#
 
 BUILD_HOME=/Users/Albert/Documents/Development/build/LinuxShellBuild
 
