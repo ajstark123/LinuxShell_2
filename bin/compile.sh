@@ -21,61 +21,25 @@ export SRC_TEST=$SRC_HOME/org/ajstark/TestDriver/PojTestDriver
 
 export OUT_HOME=$BUILD_HOME/out
 
+export LIB_HOME=$BUILD_HOME/out
+
 export BIN_HOME=$BUILD_HOME/bin
 
 
 echo " "
 echo " "
-echo $OUT_HOME
-ls -ld $OUT_HOME
-ls -ld $OUT_HOME/*
-
-
-echo " "
-echo " "
-echo $BIN_HOME
-ls -ld $BIN_HOME
-ls -ld $BIN_HOME/*
-
+cd $OUT_HOME
+pwd
+echo "Deleting all class files"
+rm -Rf org
 
 echo " "
 echo " "
-echo $SRC_HOME
-ls -ld $SRC_HOME
-ls -ld $SRC_HOME/*
+cd $LIB_HOME
+pwd
+echo "Deleting all jar, ear, war files"
+rm -Rf *.jar *.ear *.war
 
-
-echo " "
-echo " "
-echo $SRC_INPUT_OUTPUT
-ls -ld $SRC_INPUT_OUTPUT
-ls -ld $SRC_INPUT_OUTPUT/*
-
-
-echo " "
-echo " "
-echo $SRC_CMD_INFRA
-ls -ld $SRC_CMD_INFRA
-ls -ld $SRC_CMD_INFRA/*
-
-
-echo " "
-echo " "
-echo $SRC_CMD
-ls -ld $SRC_CMD
-ls -ld $SRC_CMD/*
-
-
-echo " "
-echo " "
-echo $SRC_SHELL
-ls -ld $SRC_SHELL
-ls -ld $SRC_SHELL/*
-
-
-echo " "
-echo " "
-echo $SRC_TEST
-ls -ld $SRC_TEST
-ls -ld $SRC_TEST/*
-
+cd $BIN_HOME
+pwd
+ls -ld *
