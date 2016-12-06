@@ -23,5 +23,5 @@ echo " "
 java -version
 
 
-java -classpath $LIB_HOME/linux_shell.jar;$CLASSES_TEST_DRIVERS  org.ajstark.LinixShell.TestDriver.TestDrive
+java -classpath $LIB_HOME/linux_shell.jar:$CLASSES_TEST_DRIVERS  org.ajstark.LinixShell.TestDriver.TestDrive
 
