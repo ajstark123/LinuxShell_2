@@ -35,35 +35,28 @@ export BIN_HOME=$BUILD_HOME/bin
 echo " "
 echo " "
 cd $CLASSES_HOME
-pwd
-echo "Deleting all package class files"
+echo "Deleting all package class files in "  `pwd`
 rm -Rf org
 
 echo " "
 echo " "
 cd $CLASSES_TEST_DRIVERS
-pwd
-echo "Deleting all test driver class files"
+echo "Deleting all test driver class files "  `pwd`
 rm -Rf org
 
 echo " "
 echo " "
 cd $LIB_HOME
-pwd
-echo "Deleting all jar, ear, war files"
+
+echo "Deleting all jar, ear, war files in "  `pwd`
 rm -Rf *.jar *.ear *.war
 
-echo " "
-echo " "
-cd $BIN_HOME
-pwd
-ls -ld *
 
 echo " "
 echo " "
 javac -version
 
-
+cd $BIN_HOME
 echo " "
 echo " "
 echo "Compiling InputOutput package"
