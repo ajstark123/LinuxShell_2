@@ -95,7 +95,7 @@ jar iv $LIB_HOME/linux_shell.jar
 echo " "
 echo " "
 cd $BIN_HOME
-pwd
 echo "Compiling POJ Test Drivere"
 javac  -d $CLASSES_TEST_DRIVERS  -classpath $LIB_HOME/linux_shell.jar  $SRC_TEST/*.java
-
+echo " "
+echo " "
